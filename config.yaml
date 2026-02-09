@@ -1,0 +1,37 @@
+seed: 42
+out_dir: MTP_Gravity
+
+
+# Domain
+xmax: 76000.0
+ymax: 10000.0
+cell_area: 6e5
+
+
+# Density ranges
+rho1_min: -500.0
+rho1_max: 10.0
+rho2_min: -400.0
+rho2_max: 10.0
+rho3_fixed: 100.0
+
+
+# Synthetic data
+n_samples: 20000
+noise_std_mgal: 0.05
+
+
+# ANN
+epochs: 20
+batch_size: 64
+lr: 1e-3
+weight_decay: 1e-5
+hidden_width: 512
+hidden_layers: 3
+dropout: 0.05
+
+
+# Data
+obs_csv: gravity_data.csv
+obs_x_unit: km
+g_unit_label: mGal
